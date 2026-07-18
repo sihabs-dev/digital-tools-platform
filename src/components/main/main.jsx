@@ -4,7 +4,7 @@ import CardContainer from "./cardContainer";
 
 const cardDataPromise = fetch("/cardData.json").then((res) => res.json());
 
-const Main = () => {
+const Main = ({cartArr,setCartArr}) => {
   return (
     <main className="container mx-auto">
       <MainHeading />
@@ -13,7 +13,7 @@ const Main = () => {
           <span className="loading loading-spinner loading-xl w-17 h-17 block mx-auto mt-24"></span>
         }
       >
-        <CardContainer cardDataPromise={cardDataPromise} />
+        <CardContainer cardDataPromise={cardDataPromise} cartArr={ cartArr} setCartArr={setCartArr} />
       </Suspense>
     </main>
   );

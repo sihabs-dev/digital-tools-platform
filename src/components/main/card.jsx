@@ -3,9 +3,12 @@ import { FaCheck } from "react-icons/fa";
 import { IoCheckmark } from "react-icons/io5";
 import Badge from "./badge";
 
-const Card = ({ item }) => {
+const Card = ({ item, setCartArr }) => {
   const { id, name, description, price, period, tag, tagType, features, icon } =
     item;
+  const handleCartArr = (product) => {
+    setCartArr((prev) => [...prev, product]);
+  };
   return (
     <div className="border-2 border-[#F2F2F2] rounded-2xl p-3 sm:p-5 space-y-3  relative">
       <div className="w-16 h-16 flex justify-center items-center text-3xl  border-2 border-[#f2f2f2] rounded-full">
@@ -20,14 +23,16 @@ const Card = ({ item }) => {
       <div className="text-[#627382] leading-5">
         {features.map((feature, index) => {
           return (
-            <div className="flex items-center gap-0.5">
-              <IoCheckmark className="text-green-400" />{" "}
-              <p key={index}>{feature}</p>
+            <div key={index} className="flex items-center gap-0.5">
+              <IoCheckmark className="text-green-400" /> <p>{feature}</p>
             </div>
           );
         })}
       </div>
-      <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-full rounded-4xl">
+      <button
+        onClick={() => handleCartArr(item)}
+        className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-full rounded-4xl"
+      >
         Buy Now
       </button>
       <div className="absolute top-2 right-2">
