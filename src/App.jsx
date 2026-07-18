@@ -5,6 +5,7 @@ import Rating from "./components/rating/rating";
 import Main from "./components/main/main";
 import { useState } from "react";
 import Steps from "./components/step/steps";
+import Pricing from "./components/pricing/pricing";
 
 function App() {
   const [cartArr, setCartArr] = useState([]);
@@ -15,6 +16,7 @@ function App() {
       <Rating />
       <Main cartArr={cartArr} setCartArr={setCartArr} />
       <Steps />
+      <Pricing />
     </>
   );
 }

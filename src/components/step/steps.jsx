@@ -5,7 +5,7 @@ import pakage from "../../assets/package.png";
 
 const Steps = () => {
   return (
-    <section className=" bg-[#F9FAFC] py-5 my-15">
+    <section className=" bg-[#F9FAFC] py-5 my-10">
       <div className="text-center">
         <h2 className="text-5xl font-bold mb-2">Get Started in 3 Steps</h2>
         <p>Start using premium digital tools in minutes, not hours.</p>
