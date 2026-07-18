@@ -1,10 +1,15 @@
 import "./App.css";
+import Navbar from "./components/navbar/navbar";
+import Banner from "./components/banner/banner";
+import Rating from "./components/rating/rating";
 
 function App() {
   return (
     <>
-      <h1 className="text-8xl text-green-400">hello</h1>
-      <button className="btn btn-secondary">subscribe</button>
+      <Navbar />
+      <Banner />
+      <Rating/>
+      
     </>
   );
 }
