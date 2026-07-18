@@ -3,11 +3,12 @@ import { FaCheck } from "react-icons/fa";
 import { IoCheckmark } from "react-icons/io5";
 import Badge from "./badge";
 
-const Card = ({ item, setCartArr }) => {
+const Card = ({ item, setCartArr, setTotal }) => {
   const { id, name, description, price, period, tag, tagType, features, icon } =
     item;
   const handleCartArr = (product) => {
     setCartArr((prev) => [...prev, product]);
+    setTotal((prev) => prev + product.price);
   };
   return (
     <div className="border-2 border-[#F2F2F2] rounded-2xl p-3 sm:p-5 space-y-3  relative">

@@ -3,9 +3,10 @@ import Card from "./card";
 import Cart from "./cart";
 
 const CardContainer = ({ cardDataPromise, cartArr, setCartArr }) => {
+   let [total, setTotal] = useState(0);
   const dataArr = use(cardDataPromise);
   const allCard = dataArr.map((item) => (
-    <Card key={item.id} item={item} setCartArr={setCartArr}></Card>
+    <Card key={item.id} item={item} setCartArr={setCartArr} setTotal={setTotal}></Card>
   ));
   let [selected, setSelected] = useState("products");
   function handleSelected(select) {
@@ -32,7 +33,7 @@ const CardContainer = ({ cardDataPromise, cartArr, setCartArr }) => {
           {allCard}
         </div>
       ) : (
-        <Cart cartArr={cartArr} setCartArr={setCartArr} />
+          <Cart cartArr={cartArr} setCartArr={setCartArr} total={ total} setTotal={setTotal} />
       )}
     </section>
   );
