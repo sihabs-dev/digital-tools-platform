@@ -6,6 +6,7 @@ import Main from "./components/main/main";
 import { useState } from "react";
 import Steps from "./components/step/steps";
 import Pricing from "./components/pricing/pricing";
+import Footer from "./components/footer/footer";
 
 function App() {
   const [cartArr, setCartArr] = useState([]);
@@ -17,6 +18,7 @@ function App() {
       <Main cartArr={cartArr} setCartArr={setCartArr} />
       <Steps />
       <Pricing />
+      <Footer />
     </>
   );
 }
