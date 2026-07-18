@@ -1,7 +1,7 @@
 import React from "react";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
-const Navbar = () => {
+const Navbar = ({ cartArr }) => {
   return (
     <div className="border-r-2 border-gray-700">
       <div className="flex flex-col items-center sm:flex-row sm:justify-between sm:navbar container mx-auto">
@@ -69,7 +69,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-3">
-          <div className="text-xl sm:text-2xl">
+          <div className="text-xl sm:text-2xl relative">
+            <div className="flex justify-center items-center text-[12px] w-5 h-5 bg-red-400 text-center rounded-full text-white absolute -top-2 -right-2">{cartArr.length}</div>
             <PiShoppingCartSimpleLight />
           </div>
           <a href="#" className="btn rounded-4xl">

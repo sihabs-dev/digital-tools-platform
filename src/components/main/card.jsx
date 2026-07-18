@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { IoCheckmark } from "react-icons/io5";
 import Badge from "./badge";
+import { toast } from "react-toastify";
 
 const Card = ({ item, setCartArr, setTotal }) => {
   const { id, name, description, price, period, tag, tagType, features, icon } =
     item;
+  const [isBuy, setIsBuy] = useState("Buy Now");
   const handleCartArr = (product) => {
+    setIsBuy("add to cart");
     setCartArr((prev) => [...prev, product]);
     setTotal((prev) => prev + product.price);
+    toast.success(`${product.name}, successfully add to cart!`);
   };
   return (
     <div className="border-2 border-[#F2F2F2] rounded-2xl p-3 sm:p-5 space-y-3  relative">
@@ -34,7 +38,7 @@ const Card = ({ item, setCartArr, setTotal }) => {
         onClick={() => handleCartArr(item)}
         className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-full rounded-4xl"
       >
-        Buy Now
+        {isBuy}
       </button>
       <div className="absolute top-2 right-2">
         <Badge tag={tag} />
