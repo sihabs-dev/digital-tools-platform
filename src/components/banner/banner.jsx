@@ -29,7 +29,7 @@ const Banner = () => {
         </button>
       </div>
       <div>
-        <img src={BannerImg} alt="" />
+        <img src={BannerImg} alt=""  />
       </div>
     </section>
   );

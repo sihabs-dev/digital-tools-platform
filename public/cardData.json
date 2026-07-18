@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "ResumePro AI",
+    "description": "Create ATS-friendly resumes with AI-powered suggestions and professional templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ resume templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI writing suggestions"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "TaskFlow",
+    "description": "Manage projects, tasks, and team collaboration in one workspace.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited projects",
+      "Kanban boards",
+      "Team collaboration",
+      "Task reminders"
+    ],
+    "icon": "📋"
+  },
+  {
+    "id": 3,
+    "name": "DesignKit UI",
+    "description": "Premium UI kits and design resources for web and mobile apps.",
+    "price": 89,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "500+ UI components",
+      "Figma support",
+      "Dark mode",
+      "Lifetime updates"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "name": "CodeBoost",
+    "description": "AI-powered coding assistant for developers.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Code completion",
+      "Bug detection",
+      "Code explanation",
+      "Multi-language support"
+    ],
+    "icon": "💻"
+  },
+  {
+    "id": 5,
+    "name": "CloudVault",
+    "description": "Secure cloud storage with automatic backup and syncing.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "1TB storage",
+      "Auto backup",
+      "File sharing",
+      "End-to-end encryption"
+    ],
+    "icon": "☁️"
+  },
+  {
+    "id": 6,
+    "name": "SocialSpark",
+    "description": "Schedule and analyze your social media content with ease.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Content calendar",
+      "Post scheduling",
+      "Analytics",
+      "Multiple accounts"
+    ],
+    "icon": "📱"
+  },
+  {
+    "id": 7,
+    "name": "LearnMaster",
+    "description": "Access premium programming and design courses anytime.",
+    "price": 199,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Lifetime access",
+      "Certificates",
+      "Projects",
+      "Offline downloads"
+    ],
+    "icon": "🎓"
+  },
+  {
+    "id": 8,
+    "name": "InvoiceEasy",
+    "description": "Create professional invoices and manage business payments.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Invoice templates",
+      "Payment tracking",
+      "Tax reports",
+      "PDF export"
+    ],
+    "icon": "🧾"
+  },
+  {
+    "id": 9,
+    "name": "SecurePass",
+    "description": "A password manager that keeps your accounts safe across all devices.",
+    "price": 39,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited passwords",
+      "Password generator",
+      "Auto-fill support",
+      "Cross-device sync"
+    ],
+    "icon": "🔐"
+  }
+]

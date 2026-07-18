@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="text-xl sm:text-2xl">
             <PiShoppingCartSimpleLight />
           </div>
-          <a href="#" className="btn">
+          <a href="#" className="btn rounded-4xl">
             Login
           </a>
           <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-4xl">
